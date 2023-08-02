@@ -1,2 +1,2 @@
 #!/bin/bash
-del /f /s *~
+find . -name '*~' -delete
