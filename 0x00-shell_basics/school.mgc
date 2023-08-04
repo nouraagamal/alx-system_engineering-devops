@@ -1,1 +1,2 @@
 file -C -m magic
+file -m magic.mgc yourtestfile
