@@ -1,3 +1,2 @@
-0 string SCHOOL school data !:mime School
-Terminal lay
+0 string SCHOOL school data !:mime School Terminal lay
 file -C -m school.mgc
