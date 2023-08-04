@@ -1,6 +1,2 @@
 0 string SCHOOL School data
 !:mime School
-
-Terminal lay
-
-file -C -m school.mgc
