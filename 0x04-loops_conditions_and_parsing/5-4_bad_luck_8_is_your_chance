@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#Code displays Best School 10 times but not for 4th and 8th.
+
+C = 0
+while [ $C -lt 11 ]
+do
+    if [ $C = 4 ]
+    then
+        echo "bad luck"
+    elif [ $C = 8 ]
+    then
+        echo "good luck"
+    else
+	echo "Best School"
+    fi
+      ((C++))
+done

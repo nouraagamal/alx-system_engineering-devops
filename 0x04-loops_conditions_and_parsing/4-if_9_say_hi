@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#This code displays Best School 10 times.
+
+C = 0
+while [ $C -lt 11 ]
+do
+    if [ $C = 9 ]
+    then
+        echo "Hi"
+    else
+        echo "Best School"
+    fi
+      ((C++))
+done
