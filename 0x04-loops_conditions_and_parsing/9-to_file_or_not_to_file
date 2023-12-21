@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-#Code displays information about the holbertonschool file.
+# displays information about the holbertonschool file.
 
-FILE = "school"
+FILE="school"
 
 if [ -e "$FILE" ]
 then
