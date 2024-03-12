@@ -6,6 +6,7 @@ sudo apt update
 sudo apt install nginx -y
 sudo service nginx start
 sudo ufw allow 'Nginx HTTP'
-sudo ufw allow 80
 sudo chown -R $USER:$USER /var/www/html/index.nginx-debian.html
+sudo chmod -R 755 /var/www
+cp /var/www/html/index.nginx-debian.html /var/www/html/index.nginx-debian.html.bckp
 sudo echo "Hello World!" > /var/www/html/index.nginx-debian.html
