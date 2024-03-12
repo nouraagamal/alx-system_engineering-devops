@@ -2,12 +2,9 @@
 # Configures a new ubuntu machine by installing Nginx on port 80
 # Serve a page that would return a Hello World string
 
-#update and install
 sudo apt update
 sudo apt install nginx -y
-# starting nginx service
 sudo service nginx start
-# allowing nginx on firewall
 sudo ufw allow 'Nginx HTTP'
 sudo ufw allow 80
 sudo chown -R $USER:$USER /var/www/html/index.nginx-debian.html
