@@ -22,7 +22,7 @@ file {'/var/www/html/error_404.html':
 	content => 'Ceci n'est pas une page'
 }
 
-exec {'redirect_me':
+exec {'error_404':
 	command => 'sed -i "25i\	 error_page 404 /error_404.html;' /etc/nginx/sites-available/default',
 	provider => 'shell'
 }
