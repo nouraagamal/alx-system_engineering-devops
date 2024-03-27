@@ -1,4 +1,4 @@
-nstall Nginx web server (w/ Puppet)
+#Install Nginx web server (w/ Puppet)
 
 exec { 'update system':
         command => '/usr/bin/apt-get update',
