@@ -8,10 +8,11 @@ domain_info () {
 
 if [ "$#" == 1 ]
 then
-  domain_info "$1" "www"
-  domain_info "$1" "lb-01"
-  domain_info "$1" "web-01"
-  domain_info "$1" "web-02"
-else
-  domain_information "$1" "$2"
+  domain_info "www.$1" "www"
+  domain_info "lb-01.$1" "lb-01"
+  domain_info "web-01.$1" "web-01"
+  domain_info "web-02.$1" "web-02"
+elif [ "$#" == 2 ]
+then
+  domain_information "$2.$1" "$2"
 fi
